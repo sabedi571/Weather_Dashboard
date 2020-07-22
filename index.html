@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
+        <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+    </nav>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 searchColumn">
+                <form>
+                    <h3>Search city</h3>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="cityInput" placeholder="Enter City">
+                        <div class="input-group-append">
+                            <button type="submit" id="submitCity" class="btn btn-secondary glyphicon glyphicon-search">
+                                <i class="glyphicon glyphicon-user form-control-feedback"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div id="previousSearch" class="btn-group-vertical"></div>
+            </div>
+
+           <div class="col-md-12">
+               <div id="currentWeather">
+
+               </div>
+               <div>
+                   <div class="row" id="weatherForecast"></div>
+               </div>
+
+               
+            </div>
+
+
+
+           </div>
+
+
+
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
